@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <form class="box" name="login-form" action="login.html" method="post" id="login-form">
+        <h1>Login</h1>
+        <input type="text" placeholder="Enter Username"  name="username" class="input-field" id="username" onblur="checkusername()">
+        <span id="userM"></span>
+        <input type="Password" placeholder="Enter Password"name="password" class="input-field" id="password" onblur="checkuserpswrd()">
+        <span id="pass"></span>
+        <input type="submit" value="Login" onclick="validate()" class="login-btn">
+
+    </form>
+    <script   src="login.js"></script>
+    
+</body>
+</html>
